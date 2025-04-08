@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 문구</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="오늘의 롤챔프는 뭘까용... 🔮</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "가렌.",
+                "누누와 월럼프",
+                "다리우스.",
+                "럭스.",
+                "레오나",
+                "마스터이",
+                "말파이트",
+                "문도박사",
+                "미스포츈",
+                "브랜드",
+                "뽀삐",
+                "세주아니",
+                "소나",
+                "소라카",
+                "시비르",
+                "아무무",
+                "애니",
+                "애쉬",
+                "케이틀린",
+                "티모",
+                "나서스",
+                "나피리",
+                "람머스",
+                "리신",
+                "모데카이저",
+                "블피츠크랭크",
+                "사이온",
+                "루시안",
+                "세트",
+               "야스오",
+                "모르가나",
+                "베이가",
+                "볼리베어",
+                "신 짜오",
+                "우디르",
+                "이블린",
+                "이즈리얼",
+                "잔나",
+                "잭스",  
+                "제드",
+                "재라스",
+                "질리언",
+                "초가스",
+                "카이사",
+                "타릭"             
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
